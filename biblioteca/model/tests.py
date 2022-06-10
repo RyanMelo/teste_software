@@ -75,7 +75,6 @@ class casosDeTeste(unittest.TestCase):
         livro = dominio.Livro("#01", "Senhor dos aneis")
         funcionario = dominio.Funcionario("544.789.998-65", "Ryan")
 
-        biblioteca.cadastrarLivro(usuario)
         biblioteca.cadastrarLivro(livro)
 
         solicitaEmprestimo = biblioteca.realizarEmprestimo(funcionario, livro, usuario)
